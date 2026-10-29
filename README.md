@@ -21,4 +21,4 @@ HTML, CSS, and vanilla JavaScript. The interface and interactions are contained 
 
 ## Contact
 
-Nette Beckers is based in Belgium and studies Information Management at KU Leuven. For opportunities, reach out at [nette.beckers@gmail.com](mailto:nette.beckers@gmail.com).
+Nette Beckers is based in Belgium and studied Computer Science at UHasselt. For opportunities, reach out at [nette.beckers@gmail.com](mailto:nette.beckers@gmail.com).
