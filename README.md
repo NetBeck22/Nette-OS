@@ -19,10 +19,4 @@ This project is a standalone HTML page with no build step or dependencies to ins
 
 HTML, CSS, and vanilla JavaScript. The interface and interactions are contained in `nette.html`; Google Fonts provides the Syne and Space Mono typefaces.
 
-## Contact
 
-<<<<<<< Updated upstream
-Nette Beckers is based in Belgium and studied Computer Science at UHasselt. For opportunities, reach out at [nette.beckers@gmail.com](mailto:nette.beckers@gmail.com).
-=======
-Nette Beckers is based in Belgium and works as a fullstack developer at DPG Media. Find her projects on [GitHub](https://github.com/NetBeck22), or reach out at [nette.beckers@gmail.com](mailto:nette.beckers@gmail.com).
->>>>>>> Stashed changes
