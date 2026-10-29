@@ -1,0 +1,8 @@
+.contact-list{display:flex;flex-direction:column;gap:.8rem}
+.contact-intro{margin:0 0 1rem;color:#c0c0e0;font-size:.82rem;line-height:1.75}
+.contact-item{display:flex;align-items:center;gap:1rem;padding:.95rem;border:1px solid rgba(255,63,164,.18);border-radius:10px;background:rgba(255,63,164,.05);color:var(--text);text-decoration:none;transition:background .25s,border-color .25s,transform .25s}
+.contact-item:hover{transform:translateX(6px);border-color:rgba(255,63,164,.5);background:rgba(255,63,164,.1)}
+.contact-icon{flex-shrink:0;font-size:1.3rem}
+.contact-label,.contact-val{display:block}
+.contact-label{color:#fff;font-family:'Syne',sans-serif;font-size:.9rem;font-weight:700}
+.contact-val{margin-top:.1rem;color:#b8b8d8;font-size:.78rem}

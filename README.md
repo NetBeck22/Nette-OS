@@ -2,9 +2,14 @@
 
 An interactive portfolio and CV for Nette Beckers, a Belgian fullstack and creative developer working on the radio floor at DPG Media since June 2026. Explore her work through a desktop-inspired interface, complete with project windows, a terminal, and a playable Tetris game.
 
-## Open the portfolio
+## Run locally
 
-This project is a standalone HTML page with no build step or dependencies to install. Open [`nette.html`](nette.html) in a browser, or serve the repository with any static file server.
+```sh
+npm install
+npm run dev
+```
+
+Create a production build with `npm run build`. The legacy [`nette.html`](nette.html) URL redirects to the React app in `index.html`. GitHub Actions builds and deploys `dist/` to GitHub Pages when changes are pushed to `main`; set the repository's Pages source to **GitHub Actions**.
 
 ## Explore
 
@@ -17,6 +22,6 @@ This project is a standalone HTML page with no build step or dependencies to ins
 
 ## Built with
 
-HTML, CSS, and vanilla JavaScript. The interface and interactions are contained in `nette.html`; Google Fonts provides the Syne and Space Mono typefaces.
+React, Vite, and component-scoped CSS. Each screen lives in `src/components/` with its own JSX and stylesheet; `src/App.jsx` manages the OS shell and windows. Google Fonts provides Syne and Space Mono.
 
 

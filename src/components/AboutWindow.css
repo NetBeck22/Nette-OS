@@ -1,0 +1,11 @@
+.about-profile{display:flex;align-items:center;gap:1.2rem;margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid rgba(255,63,164,.15)}
+.about-avatar{display:flex;width:68px;height:68px;flex-shrink:0;align-items:center;justify-content:center;border:2px solid rgba(255,63,164,.4);border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));font-size:1.9rem}
+.about-name{color:#fff;font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800}
+.about-role{margin-top:.2rem;color:var(--pink);font-size:.8rem;text-transform:uppercase}
+.about-bio{color:#d0d0e8;font-size:.86rem;line-height:1.85}
+.about-bio p+p{margin-top:.8rem}
+.about-bio strong{color:#fff}
+.about-bio em{color:var(--pink);font-style:normal}
+.about-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+.about-tag{padding:.3rem .65rem;border:1px solid rgba(255,63,164,.25);border-radius:6px;color:#c0c0e0;font-size:.7rem}
+.about-tag:hover{border-color:var(--pink);color:var(--pink)}

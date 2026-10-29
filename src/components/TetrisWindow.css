@@ -1,0 +1,10 @@
+#win-game{width:340px;height:500px;top:80px;left:300px}
+#win-game .win-body{display:flex;flex-direction:column;align-items:center;padding:.8rem}
+#tetris-canvas{display:block;margin:0 auto;border:1px solid rgba(255,63,164,.25);background:#000}
+.game-controls{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-top:.8rem}
+.game-btn{padding:.5rem .85rem;border:1px solid rgba(255,63,164,.3);border-radius:6px;background:rgba(255,63,164,.1);color:var(--pink);font-size:.78rem;font-weight:700}
+.game-btn:hover:not(:disabled){background:rgba(255,63,164,.25)}
+.game-btn:disabled{opacity:.5}
+.game-score{margin-top:.6rem;color:#b0b0d0;font-size:.8rem;text-align:center}
+.game-score span{color:var(--pink);font-family:'Syne',sans-serif;font-size:.95rem;font-weight:700}
+.game-hint{margin-top:.6rem;color:var(--muted);font-size:.58rem;text-align:center}
