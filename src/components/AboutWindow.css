@@ -1,3 +1,4 @@
+.window#win-about{top:80px;left:80px;width:430px;height:410px}
 .about-profile{display:flex;align-items:center;gap:1.2rem;margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid rgba(255,63,164,.15)}
 .about-avatar{display:flex;width:68px;height:68px;flex-shrink:0;align-items:center;justify-content:center;border:2px solid rgba(255,63,164,.4);border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));font-size:1.9rem}
 .about-name{color:#fff;font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800}

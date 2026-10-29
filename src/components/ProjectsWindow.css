@@ -1,3 +1,4 @@
+.window#win-projects{top:60px;left:180px;width:500px;height:480px}
 .proj-list{display:flex;flex-direction:column;gap:.85rem}
 .proj-item{padding:1.1rem;border:1px solid rgba(255,63,164,.15);border-radius:10px;background:rgba(255,63,164,.04);transition:background .25s,border-color .25s,transform .25s}
 .proj-item:hover{transform:translateX(4px);border-color:rgba(255,63,164,.4);background:rgba(255,63,164,.08)}

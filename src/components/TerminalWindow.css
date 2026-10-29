@@ -1,4 +1,4 @@
-#win-terminal{width:510px;height:420px;top:120px;left:350px}
+#win-terminal{width:470px;height:390px;top:120px;left:300px}
 #win-terminal .win-body{display:flex;height:100%;flex-direction:column;padding:0;background:#000}
 .terminal-content{display:flex;min-height:0;flex:1;flex-direction:column;background:#000;cursor:text}
 .terminal-output{min-height:0;flex:1;overflow-y:auto;padding:.8rem 1rem;color:var(--green);font-size:.7rem;line-height:1.9}

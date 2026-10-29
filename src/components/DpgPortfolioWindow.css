@@ -1,3 +1,4 @@
+.window#win-dpg{top:48px;left:220px;width:min(680px,calc(100vw - 32px));height:min(590px,calc(100vh - 64px))}
 .dpg-intro{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:1rem;padding:1.1rem;border:1px solid rgba(255,63,164,.22);border-radius:10px;background:linear-gradient(125deg,rgba(255,63,164,.1),rgba(0,212,200,.06))}
 .dpg-eyebrow,.dpg-case-type{color:var(--teal);font-size:.64rem;font-weight:700}
 .dpg-intro h2{margin:.35rem 0;color:#fff;font-family:'Syne',sans-serif;font-size:1.25rem}
@@ -24,3 +25,4 @@
 .dpg-tile-link{display:block;padding:.45rem .65rem;color:var(--pink);font-size:.66rem;font-weight:700;text-decoration:none}
 .dpg-tile-link:hover{color:#fff;background:rgba(255,63,164,.08)}
 @media (max-width:600px){.dpg-case-grid,.dpg-tile-embeds{grid-template-columns:1fr}.dpg-intro{align-items:flex-start}.dpg-count{font-size:1.2rem}}
+@media (min-width:601px) and (max-width:900px){.window#win-dpg{left:10px!important}}

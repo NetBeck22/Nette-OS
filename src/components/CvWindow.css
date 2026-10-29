@@ -1,3 +1,4 @@
+.window#win-cv{top:100px;left:160px;width:420px;height:450px}
 .cv-section{margin-bottom:1.3rem}
 .cv-section-title{display:flex;align-items:center;gap:.6rem;margin:0 0 .85rem;color:var(--pink);font-size:.74rem;font-weight:700;text-transform:uppercase}
 .cv-section-title::after{height:1px;flex:1;background:rgba(255,63,164,.2);content:''}

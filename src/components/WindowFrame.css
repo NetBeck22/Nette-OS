@@ -3,6 +3,8 @@
   display: none;
   flex-direction: column;
   min-width: 340px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 64px);
   overflow: hidden;
   background: #0d0d1c;
   border: 1px solid rgba(255, 63, 164, 0.3);
@@ -26,6 +28,8 @@
   width: 100vw !important;
   height: calc(100vh - 52px) !important;
   border-radius: 0;
+  max-width: none;
+  max-height: none;
   resize: none;
 }
 
