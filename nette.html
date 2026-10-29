@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Meet Nette Beckers, a Belgian creative developer. Explore her interactive CV, projects, experience, and a playable Tetris game in a desktop-inspired portfolio.">
-<title>Nette Beckers | Interactive Creative Developer CV</title>
+<meta name="description" content="Nette Beckers, fullstack developer op de radiovloer bij DPG Media sinds juni 2026. Ontdek haar interactieve cv, GitHub-projecten en creatieve digitale ervaringen.">
+<title>Nette Beckers | Fullstack & Creative Developer</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -95,11 +95,11 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 .proj-list{display:flex;flex-direction:column;gap:.85rem}
 .proj-item{background:rgba(255,63,164,.04);border:1px solid rgba(255,63,164,.15);border-radius:10px;padding:1.1rem;transition:all .25s;cursor:none}
 .proj-item:hover{border-color:rgba(255,63,164,.4);background:rgba(255,63,164,.08);transform:translateX(4px)}
-.proj-item-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.5rem}
+.proj-item-header{display:flex;justify-content:space-between;align-items:flex-start;gap:.6rem;flex-wrap:wrap;margin-bottom:.5rem}
 .proj-item-title{font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;color:#fff}
 .proj-item-year{font-size:.72rem;color:#A0A0C8;background:rgba(255,63,164,.1);padding:.15rem .55rem;border-radius:4px}
 .proj-item-desc{font-size:.82rem;color:#C8C8E0;line-height:1.75}
-.proj-item-link{display:inline-flex;align-items:center;gap:.3rem;color:var(--pink);font-size:.78rem;text-decoration:none;margin-top:.6rem;cursor:none;transition:gap .2s;font-weight:700}
+.proj-item-link{display:inline-flex;align-items:center;gap:.3rem;color:var(--pink);font-size:.78rem;text-decoration:none;margin-top:.6rem;margin-right:.8rem;cursor:none;transition:gap .2s;font-weight:700;overflow-wrap:anywhere;max-width:100%}
 .proj-item-link:hover{gap:.6rem}
 
 /* TERMINAL */
@@ -196,6 +196,18 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 .tb-win-open{background:rgba(255,63,164,.1) !important;border-color:rgba(255,63,164,.25) !important;}
 .tb-win-open::after{content:'';position:absolute;bottom:-8px;left:50%;transform:translateX(-50%);width:4px;height:4px;background:var(--pink);border-radius:50%}
 .tb-win-minimized{opacity:.5 !important;}
+@media(max-width:600px){
+  body{cursor:auto}
+  #cur{display:none}
+  .window{left:10px !important;top:16px !important;width:calc(100% - 20px) !important;min-width:0;height:calc(100% - 84px) !important;max-height:calc(100% - 84px);resize:none}
+  .win-body{padding:1rem;overflow-wrap:anywhere}
+  .about-profile>div{min-width:0}
+  #terminal-input{min-width:0}
+  #taskbar{padding:0 .4rem;gap:.2rem;overflow-x:auto}
+  .tb-app{width:32px;height:32px;flex-shrink:0}
+  .tb-start{padding:.4rem;white-space:nowrap;flex-shrink:0}
+  .tb-sep,.tb-clock{display:none}
+}
 </style>
 </head>
 <body>
@@ -239,13 +251,17 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
     <span class="di-emoji">📬</span>
     <span class="di-label">Contact</span>
   </div>
-  <div class="desktop-icon" style="top:280px;left:108px" onclick="window.open('https://netbeck22.github.io/STUDIO/classified.html','_blank')">
+  <div class="desktop-icon" style="top:280px;left:108px" onclick="window.open('https://netbeck22.github.io/CLASSIFIED/classified.html','_blank','noopener,noreferrer')">
     <span class="di-emoji">🔍</span>
-    <span class="di-label">NETBECK Studio</span>
+    <span class="di-label">CLASSIFIED</span>
   </div>
-  <div class="desktop-icon" style="top:380px;left:108px" onclick="window.open('https://netbeck22.github.io/ThisIsNotABirthdayParty/intro.html','_blank')">
+  <div class="desktop-icon" style="top:380px;left:108px" onclick="window.open('https://netbeck22.github.io/ThisIsNotABirthdayParty/','_blank','noopener,noreferrer')">
     <span class="di-emoji">🎭</span>
     <span class="di-label">Birthday Party</span>
+  </div>
+  <div class="desktop-icon" style="top:480px;left:108px" onclick="window.open('https://github.com/NetBeck22','_blank','noopener,noreferrer')">
+    <span class="di-emoji">💻</span>
+    <span class="di-label">GitHub</span>
   </div>
 </div>
 
@@ -281,21 +297,22 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
       <div class="about-avatar">👩‍💻</div>
       <div>
         <div class="about-name">Nette Beckers</div>
-        <div class="about-role">Creative Developer · Belgium</div>
+        <div class="about-role">Fullstack & Creative Developer · België</div>
       </div>
     </div>
     <div class="about-bio">
       <p>Ik bouw <strong>dingen die mensen bijblijven</strong>. Geen standaard webapps. <em>Immersive experiences</em> die mensen laten voelen wat ze normaal niet zien.</p>
       <br>
-      <p>Van een <strong>data surveillance installatie</strong> die jouw echte device data toont, tot een <strong>murder mystery dinner</strong> waar mijn vrienden personages werden en een <strong>Halloween escape room</strong> die ik op mijn 16e op de zolder bouwde. Ze spreken er nu nog over.</p>
+      <p>Sinds <strong>juni 2026</strong> werk ik als <em>fullstack developer bij DPG Media</em>, op de <strong>radiovloer</strong>.</p>
       <br>
-      <p>Dit jaar bouwde ik ook mijn eerste <strong>freelance website</strong> voor een bedrijf. Solo, op deadline, opgeleverd. Ik ben bezig aan mijn master Information Management aan de <strong>KU Leuven</strong> en bachelor informatica aan de <strong>UHasselt</strong>.</p>
+      <p>Daarnaast bouw ik creatieve en technische projecten: van <strong>CLASSIFIED</strong>, een fictieve profileringsinstallatie over databewustzijn, tot een <strong>murder mystery dinner</strong>, een <strong>Blockly-robotsimulator</strong> en onderzoek naar <strong>Graph Neural Networks</strong>.</p>
       <br>
       <p>Buiten code: <strong>Tetris</strong> tot mijn ogen pijn doen en <strong>sudoku's</strong> oplossen. Patroondenken is mijn factory mode.</p>
     </div>
     <div class="about-tags">
-      <span class="about-tag">React</span><span class="about-tag">Next.js</span><span class="about-tag">Node.js</span><span class="about-tag">TypeScript</span><span class="about-tag">Python</span><span class="about-tag">C++</span><span class="about-tag">SQL</span><span class="about-tag">AI tools</span><span class="about-tag">Immersive design</span><span class="about-tag">🎮 Game dev</span>
+      <span class="about-tag">HTML & CSS</span><span class="about-tag">JavaScript</span><span class="about-tag">TypeScript</span><span class="about-tag">React</span><span class="about-tag">Next.js</span><span class="about-tag">Node.js</span><span class="about-tag">SQL</span><span class="about-tag">Python & NumPy</span><span class="about-tag">C++ & Qt Widgets</span><span class="about-tag">Git & GitHub</span><span class="about-tag">Blockly</span><span class="about-tag">Canvas</span><span class="about-tag">Web Audio API</span><span class="about-tag">OOP & UML</span><span class="about-tag">GNN & MPNN</span><span class="about-tag">Debugging</span><span class="about-tag">AI tools</span><span class="about-tag">Immersive design</span><span class="about-tag">Game development</span><span class="about-tag">Programmeeronderwijs</span>
     </div>
+    <a href="https://github.com/NetBeck22" target="_blank" rel="noopener noreferrer" class="proj-item-link">Bekijk mijn GitHub →</a>
   </div>
 </div>
 
@@ -312,12 +329,18 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
   <div class="win-body">
     <div class="proj-list">
       <div class="proj-item">
+        <div class="proj-item-header"><div class="proj-item-title">GitHub · NetBeck22</div></div>
+        <div class="proj-item-desc">Mijn openbare code, experimenten en projecten: van interactieve webapps tot C++ en onderzoek met Python.</div>
+        <a href="https://github.com/NetBeck22?tab=repositories" target="_blank" rel="noopener noreferrer" class="proj-item-link">Alle repositories →</a>
+      </div>
+      <div class="proj-item">
         <div class="proj-item-header">
-          <div class="proj-item-title">🔍 NETBECK Studio</div>
+          <div class="proj-item-title">🔍 CLASSIFIED</div>
           <div class="proj-item-year">2026</div>
         </div>
-        <div class="proj-item-desc">Data awareness studio. Een browser-installatie die bezoekers laat voelen hoe het is om geprofileerd te worden.</div>
-        <a href="https://netbeck22.github.io/STUDIO/classified.html" target="_blank" class="proj-item-link">Ervaar het → </a>
+        <div class="proj-item-desc">Immersieve installatie over algoritmische profilering. Een fictief dossier maakt databewustzijn voelbaar. Gebouwd met HTML, CSS, JavaScript, Canvas en Web Audio.</div>
+        <a href="https://netbeck22.github.io/CLASSIFIED/classified.html" target="_blank" rel="noopener noreferrer" class="proj-item-link">Ervaar het →</a>
+        <a href="https://github.com/NetBeck22/CLASSIFIED" target="_blank" rel="noopener noreferrer" class="proj-item-link">GitHub →</a>
       </div>
       <div class="proj-item">
         <div class="proj-item-header">
@@ -325,14 +348,31 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
           <div class="proj-item-year">2025</div>
         </div>
         <div class="proj-item-desc">Murder mystery dinner voor mijn verjaardag. AI-gegenereerde personages, cinematic trailer, atmospheric website. Een volledige immersive experience voor vrienden.</div>
-        <a href="https://netbeck22.github.io/ThisIsNotABirthdayParty/intro.html" target="_blank" class="proj-item-link">Enter the world →</a>
+        <a href="https://netbeck22.github.io/ThisIsNotABirthdayParty/" target="_blank" rel="noopener noreferrer" class="proj-item-link">Enter the world →</a>
+        <a href="https://github.com/NetBeck22/ThisIsNotABirthdayParty" target="_blank" rel="noopener noreferrer" class="proj-item-link">GitHub →</a>
+      </div>
+      <div class="proj-item">
+        <div class="proj-item-header"><div class="proj-item-title">Robot Simulator</div></div>
+        <div class="proj-item-desc">Educatieve browsergame waarin je een robot programmeert met Blockly. Met levels, lussen, variabelen, voorwaarden en een stapsgewijze debugger. JavaScript, HTML en CSS.</div>
+        <a href="https://netbeck22.github.io/robot-simulator/App/robot.html" target="_blank" rel="noopener noreferrer" class="proj-item-link">Speel de simulator →</a>
+        <a href="https://github.com/NetBeck22/robot-simulator" target="_blank" rel="noopener noreferrer" class="proj-item-link">GitHub →</a>
+      </div>
+      <div class="proj-item">
+        <div class="proj-item-header"><div class="proj-item-title">Koningsburcht</div></div>
+        <div class="proj-item-desc">Bordspel voor twee spelers als desktopapp in C++17 en Qt Widgets. Objectgeoriënteerde spelregels, een grafische interface en JSON-speldata, met UML-klassendiagram.</div>
+        <a href="https://github.com/NetBeck22/Koningsburcht" target="_blank" rel="noopener noreferrer" class="proj-item-link">Bekijk op GitHub →</a>
+      </div>
+      <div class="proj-item">
+        <div class="proj-item-header"><div class="proj-item-title">MPLang → MPNN</div></div>
+        <div class="proj-item-desc">Bachelorproef over de vertaling van MPLang-expressies naar Message Passing Neural Networks. Onderzoeksprototype met Python en NumPy rond grafen, neurale netwerken en algoritmen.</div>
+        <a href="https://github.com/NetBeck22/MPLang-to-MPNN-Translation" target="_blank" rel="noopener noreferrer" class="proj-item-link">Code, thesis & poster →</a>
       </div>
       <div class="proj-item">
         <div class="proj-item-header">
           <div class="proj-item-title">🫆 De zatte mol</div>
         <span class="proj-item-link" style="color:var(--muted);cursor:default">In wording!</span>
         </div>
-        <div class="proj-item-desc">De mol voor het vriendinnen weekend. Een webapp die alles beschikbaar stelt om de mol te spelen op ons weekend en leuke opdrachten aankondigd.</div>
+        <div class="proj-item-desc">De mol voor het vriendinnenweekend. Een webapp die alles beschikbaar stelt om de mol te spelen op ons weekend en leuke opdrachten aankondigt.</div>
       </div>
       <div class="proj-item">
         <div class="proj-item-header">
@@ -390,11 +430,11 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
   <div class="win-body">
     <div class="cv-section">
       <div class="cv-section-title">Opleiding</div>
-      <div class="cv-row"><div class="cv-info"><div class="cv-role">Master Information Management</div><div class="cv-company">KU Leuven</div></div></div>
       <div class="cv-row"><div class="cv-info"><div class="cv-role">Bachelor Informatica</div><div class="cv-company">UHasselt</div></div></div>
     </div>
     <div class="cv-section">
       <div class="cv-section-title">Werkervaring</div>
+      <div class="cv-row"><span class="cv-year">jun 2026<br>– heden</span><div class="cv-info"><div class="cv-role">Fullstack Developer</div><div class="cv-company">DPG Media · radiovloer</div></div></div>
       <div class="cv-row"><span class="cv-year">2026</span><div class="cv-info"><div class="cv-role">Freelance Web Developer</div><div class="cv-company">Zelfstandig klantproject</div></div></div>
       <div class="cv-row"><span class="cv-year">2025→...</span><div class="cv-info"><div class="cv-role">Digitalisation & software improvement</div><div class="cv-company">Eureka, Leuven</div></div></div>
       <div class="cv-row"><span class="cv-year">2024→2025</span><div class="cv-info"><div class="cv-role">Leerkracht Informatica (secundair onderwijs)</div><div class="cv-company">Sint-Michiels Inst. Keerbergen</div></div></div>
@@ -443,7 +483,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
     <div class="win-title">Contact — nette.beckers</div>
   </div>
   <div class="win-body">
-    <div class="contact-intro">Op zoek naar een creatieve developer-rol — deeltijds nu, voltijds na mijn master. Als het speels én technisch is: ik ben er voor.</div>
+    <div class="contact-intro">Fullstack developer op de radiovloer bij DPG Media sinds juni 2026. Mijn code en persoonlijke projecten vind je op GitHub. Contact voor een uitwisseling of samenwerking? Stuur gerust een bericht.</div>
     <div class="contact-list">
       <a href="mailto:nette.beckers@gmail.com" class="contact-item">
         <span class="contact-icon">✉️</span>
@@ -453,7 +493,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
         <span class="contact-icon">📞</span>
         <div><div class="contact-label">Telefoon</div><div class="contact-val">+32 489 43 15 07</div></div>
       </a>
-      <a href="https://github.com/netbeck22" target="_blank" class="contact-item">
+      <a href="https://github.com/NetBeck22" target="_blank" rel="noopener noreferrer" class="contact-item">
         <span class="contact-icon">🐙</span>
         <div><div class="contact-label">GitHub</div><div class="contact-val">github.com/netbeck22</div></div>
       </a>
@@ -505,7 +545,7 @@ const bootLogs = [
   '> Initializing NETTE OS...',
   '> Loading creative modules...',
   '> Mounting experience_engine.js ✓',
-  '> Connecting to radio_dreams.api ✓',
+  '> Connecting to dpg_radio.api ✓',
   '> Importing 4yr_codefever.log ✓',
   '> Boot complete. Welcome. 🎉',
 ];
@@ -720,8 +760,9 @@ const termCmds = {
     '<span style="color:#00D4C8">play</span>        — open Tetris 🟦',
     '<span style="color:#00D4C8">joke</span>        — developer joke',
     '<span style="color:#00D4C8">adventure</span>   — 🎮 speel een mini-game',
-    '<span style="color:#00D4C8">hire</span>        — waarom je Nette moet aannemen',
-    '<span style="color:#00D4C8">sudo hire</span>   — DRINGEND verzoek',
+    '<span style="color:#00D4C8">github</span>      — bekijk mijn repositories',
+    '<span style="color:#00D4C8">hire</span>        — mijn profiel in het kort',
+    '<span style="color:#00D4C8">sudo hire</span>   — huidige werkstatus',
     '<span style="color:#5050A0">secret      — 🤫 verborgen commando</span>',
     '<span style="color:#5050A0">clear       — wis terminal</span>',
   ],
@@ -730,38 +771,47 @@ const termCmds = {
     NETTE_ASCII,
     ' ',
     '  Naam:     <span style="color:#fff">Nette Beckers</span>',
-    '  Rol:      <span style="color:#FF3FA4">Creative Developer</span>',
+    '  Rol:      <span style="color:#FF3FA4">Fullstack & Creative Developer</span>',
     '  Locatie:  <span style="color:#fff">Tremelo → Leuven, 🇧🇪</span>',
-    '  Status:   <span style="color:#00FF64">● AVAILABLE FOR HIRE</span>',
+    '  Werk:     <span style="color:#00FF64">DPG Media · radiovloer</span>',
+    '  Sinds:    <span style="color:#fff">juni 2026</span>',
+    '  GitHub:   <a class="proj-item-link" href="https://github.com/NetBeck22" target="_blank" rel="noopener noreferrer">github.com/NetBeck22</a>',
     '  Hobbies:  <span style="color:#FFE03A">Tetris</span> · <span style="color:#9D71FF">Sudoku</span> · <span style="color:#FF3FA4">Escape rooms bouwen</span>',
     '  Fun fact: <span style="color:#5050A0">Bouwde escape room op 16. Ze praten er nog over.</span>',
   ],
 
   skills: () => [
     '<span style="color:#FFE03A">── FRONTEND ──────────────────────</span>',
-    '  React ████████████░  92%',
-    '  Next.js ███████████░  88%',
-    '  TypeScript ████████░░  80%',
-    '  TailwindCSS ████████░  82%',
+    '  HTML · CSS · JavaScript · TypeScript',
+    '  React · Next.js · Tailwind CSS',
+    '  Canvas · Web Audio API · Blockly',
     '<span style="color:#00D4C8">── BACKEND ───────────────────────</span>',
-    '  Node.js █████████░░  85%',
-    '  Python ████████░░░  78%',
-    '  SQL ███████░░░░░  70%',
-    '  C/C++ ██████░░░░░  65%',
-    '<span style="color:#FF3FA4">── SUPERPOWERS ───────────────────</span>',
-    '  Immersive Design ████████████  💯',
-    '  Making people feel things ████  💯',
-    '  Escape rooms on attics ████████  💯',
+    '  Node.js · SQL · Python',
+    '<span style="color:#9D71FF">── SOFTWARE & ONDERZOEK ──────────</span>',
+    '  C++17 · Qt Widgets · OOP · UML · JSON',
+    '  NumPy · grafen · algoritmen · GNN · MPNN',
+    '  Git · GitHub · debugging',
+    '<span style="color:#FF3FA4">── CREATIEF & EDUCATIEF ──────────</span>',
+    '  Immersive design · game development',
+    '  AI tools · programmeeronderwijs',
   ],
 
   projects: () => [
-    '<span style="color:#FF3FA4">🔍 NETBECK Studio</span>         <span style="color:#5050A0">2024–2025</span>',
-    '   AI awareness installatie. Jouw device data.',
-    '   → <span style="color:#9D71FF">netbeck22.github.io/STUDIO</span>',
+    '<span style="color:#FF3FA4">🔍 CLASSIFIED</span>            <span style="color:#5050A0">2026</span>',
+    '   Fictieve profilering, echte databewustwording.',
+    '   <a class="proj-item-link" href="https://netbeck22.github.io/CLASSIFIED/classified.html" target="_blank" rel="noopener noreferrer">Open CLASSIFIED →</a>',
     ' ',
-    '<span style="color:#FF3FA4">🎭 This Is Not A Birthday Party</span>  <span style="color:#5050A0">2024</span>',
+    '<span style="color:#FF3FA4">🎭 This Is Not A Birthday Party</span>  <span style="color:#5050A0">2025</span>',
     '   Murder mystery dinner. AI personages. Trailer.',
-    '   → <span style="color:#9D71FF">netbeck22.github.io/ThisIsNotABirthdayParty</span>',
+    '   <a class="proj-item-link" href="https://netbeck22.github.io/ThisIsNotABirthdayParty/" target="_blank" rel="noopener noreferrer">Open Birthday Party →</a>',
+    ' ',
+    '<span style="color:#FF3FA4">Robot Simulator</span> · JavaScript & Blockly',
+    '   <a class="proj-item-link" href="https://github.com/NetBeck22/robot-simulator" target="_blank" rel="noopener noreferrer">GitHub →</a>',
+    '<span style="color:#FF3FA4">Koningsburcht</span> · C++17 & Qt Widgets',
+    '   <a class="proj-item-link" href="https://github.com/NetBeck22/Koningsburcht" target="_blank" rel="noopener noreferrer">GitHub →</a>',
+    '<span style="color:#FF3FA4">MPLang → MPNN</span> · Python & NumPy',
+    '   <a class="proj-item-link" href="https://github.com/NetBeck22/MPLang-to-MPNN-Translation" target="_blank" rel="noopener noreferrer">Code, thesis & poster →</a>',
+    '   <a class="proj-item-link" href="https://github.com/NetBeck22?tab=repositories" target="_blank" rel="noopener noreferrer">Alle repositories →</a>',
     ' ',
     '<span style="color:#FF3FA4">💼 Client Website</span>          <span style="color:#5050A0">2025</span>',
     '   Freelance. Solo. Op deadline. Opgeleverd.',
@@ -776,42 +826,38 @@ const termCmds = {
     ' ',
     '  <span style="color:#FF3FA4">✉</span>  nette.beckers@gmail.com',
     '  <span style="color:#FF3FA4">☎</span>  +32 489 43 15 07',
-    '  <span style="color:#FF3FA4">⌥</span>  github.com/netbeck22',
+    '  <a class="proj-item-link" href="https://github.com/NetBeck22" target="_blank" rel="noopener noreferrer">github.com/NetBeck22 →</a>',
     ' ',
-    '  <span style="color:#5050A0">Beschikbaar deeltijds nu,</span>',
-    '  <span style="color:#5050A0">voltijds na master KU Leuven.</span>',
+    '  <span style="color:#00D4C8">Fullstack developer bij DPG Media</span>',
+    '  <span style="color:#5050A0">Radiovloer · sinds juni 2026</span>',
+  ],
+
+  github: () => [
+    '  <a class="proj-item-link" href="https://github.com/NetBeck22" target="_blank" rel="noopener noreferrer">Mijn GitHub-profiel →</a>',
+    '  <a class="proj-item-link" href="https://github.com/NetBeck22?tab=repositories" target="_blank" rel="noopener noreferrer">Alle openbare repositories →</a>',
   ],
 
   play: () => { openWindow('game'); startTetris(); return ['<span style="color:#FFE03A">🟦 Tetris geopend! ← → bewegen, ↑ roteren, ↓ sneller</span>']; },
 
   hire: () => [
-    '<span style="color:#00FF64">Waarom je Nette moet aannemen:</span>',
+    '<span style="color:#00FF64">Fullstack & Creative Developer:</span>',
     ' ',
     '  1. Ze bouwt dingen die mensen bijblijven.',
     '  2. Ze deed dit al op haar 16e. Op een zolder.',
     '  3. Ze kan je game/quiz/experience bouwen',
     '     én begrijpt waarom het leuk moet zijn.',
     '  4. 4 jaar les geven = uitleg geven aan iedereen.',
-    '  5. Ze speelt Tetris. Patroondenken. Logisch.',
+    '  5. Sinds juni 2026 fullstack developer',
+    '     op de radiovloer bij DPG Media.',
     ' ',
     '  → <span style="color:#FF3FA4">nette.beckers@gmail.com</span>',
   ],
 
   'sudo hire': () => [
-    '<span style="color:#ff6666">⚠ SUDO MODUS ACTIEF ⚠</span>',
-    ' ',
-    '<span style="color:#FFE03A">DRINGEND SYSTEEMBERICHT:</span>',
-    ' ',
-    '  Het systeem heeft gedetecteerd dat u nog geen',
-    '  <span style="color:#FF3FA4">Nette Beckers</span> heeft aangenomen.',
-    ' ',
-    '  Dit is een kritieke fout.',
-    '  Corrigeer onmiddellijk:',
-    ' ',
-    '  <span style="color:#00FF64">$ send-email nette.beckers@gmail.com</span>',
-    '  <span style="color:#00FF64">$ subject "Kom bij ons team"</span>',
-    ' ',
-    '<span style="color:#5050A0">  (Dit bericht zal zichzelf vernietigen in 5s)</span>',
+    '<span style="color:#00FF64">Werkstatus: DPG Media ✓</span>',
+    '  Fullstack developer · radiovloer',
+    '  Sinds juni 2026.',
+    '  Typ <span style="color:#00D4C8">github</span> voor mijn projecten.',
   ],
 
   joke: () => {
